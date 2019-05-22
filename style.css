@@ -91,6 +91,10 @@ nav a {
     margin: 0 auto;
 }
 
+.Race:hover {
+    color: rgb(12, 9, 3);
+}
+
 
 
 /* Media Queries */

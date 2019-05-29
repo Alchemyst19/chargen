@@ -7,6 +7,14 @@
         <title>5eCG Generator</title>
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script>
+             $( function() {
+             $( "#accordion" ).accordion();
+             } );
+        </script>
     </head>
     <body>
         <header id="top" class="main-header">
@@ -19,145 +27,177 @@
         </header>
         </div>
         <div class="wrapper">
-            <!-- <div id="Race">
-                <h2>Race</h2>
-                <p>Your character's species, picked from the list of humanoid ("player races") in D&D5e. Includes everything from humans and elves to kenku and warforged.</p>
-            </div> -->
-            <div id="Human">
-                <h2>Human</h2>
-                <p>The everymen of the Forgotten Realms, humans are as versatile as they are widespread.</p>
-            </div>
-            <div id="Elf">
-                <h2>Elf</h2>
-                <p>Elves utilize their longevity to master their specialty, whether it be natural or arcane.</p>
-            </div>
-            <div id="Dwarf">
-                <h2>Dwarf</h2>
-                <p>Shaped from stone by Moradin himself, the dwarves' knowledge of stone and metal is unmatched.</p>
-            </div>
-            <div id="Halfling">
-                <h2>Halfling</h2>
-                <p>Short and sweet, halflings utilize thier stature to charm others, typically for their own benefit.</p>
-            </div>
-            <div id="Half-Elf">
-                <h2>Half-Elf</h2>
-                <p>Descended from both humans and elves, half-elves live between two worlds, never quite fitting into either.</p>
-            </div>
-            <div id="Dragonborn">
-                <h2>Dragonborn</h2>
-                <p>Scaled and proud, dragonborn call upon their draconic ancestry to unleash elemental powers upon thier foes.</p>
-            </div>
-            <div id="Tiefling">
-                <h2>Tiefling</h2>
-                <p>The product of an ancient deal with demons, tieflings can summon hellfire to burn attackers.</p>
-            </div>
-            <div id="Kalashtar">
-                <h2>Kalashtar</h2>
-                <p>Possessed by spirits, kalashtar leverage psychic prowess to change the minds of foes, while resisting change themselves.</p>
-            </div>
-            <div id="Warforged">
-                <h2>Warforged</h2>
-                <p>Automata from an ancient time, each warforged has a purpose, which they pursue relentlessly</p>
-            </div>
-            <div id="Kenku">
-                <h2>Kenku</h2>
-                <p>Bearing resemblance to humanoid ravens, kenku can mimic any sound perfectly, but lack any spark of creativity.</p>
-            </div>
-            <div id="Gnome">
-                <h2>Gnome</h2>
-                <p>Tinkerers, animal trainers, and tricksters, gnomes are as well-known for their pranks as they are their amazing inventions</p>
-            </div>
-            <div id="Half-Orc">
-                <h2>Half-Orc</h2>
-                <p>Combining the best traits of humans and orcs, Half-Orcs are worthy competitors, both on and off the battlefield.</p>
-            </div>
-            <div id="Goliath">
-                <h2>Goliath</h2>
-                <p>Towering creatures of stone, goliath possess unmatched strength, at the cost of intelligence.</p>
-            </div>
-            <div id="Goblin">
-                <h2>Goblin</h2>
-                <p>Kleptomaniacs and cowards, goblins are most famous as foes to adventurers, but occasionally embark on adventures of their own.</p>
-            </div>
-            <div id="Kobold">
-                <h2>Kobold</h2>
-                <p>Small and agile, kobolds make up for in number what they lack in strength.</p>
-            </div>
-            <div id="Genasi">
-                <h2>Genasi</h2>
-                <p>The children of djinni, Genasi are elemental forces incarnate.</p>
-            </div>
-            <div id="Aarakocra">
-                <h2>Aarakocra</h2>
-                <p>The tribal aarakocra come from the Elemental Plane of Air, and have the wingspan to prove it.</p>
-            </div>
-            <div id="Hobgoblin">
-                <h2>Hobgoblin</h2>
-                <p>Smarter and stronger than your average goblin, Hobgoblins often emerge as leaders of the lesser monstrous races.</p>
-            </div>
-            <div id="Orc">
-                <h2>Orc</h2>
-                <p>Viewed as bloodthirsty savages by humanoids everywhere, the orcs are a terrible sight in any battle.</p>
-            </div>
-            <div id="Firbolg">
-                <h2>Firbolg</h2>
-                <p>Protectors of the natural world, Firbolgs are the furrier cousins of the Goliaths.</p>
-            </div>
-            <div id="Lizardfolk">
-                <h2>Lizardfolk</h2>
-                <p>Utterly alien in nature, the lizardfolk pursue goals that are indecipherable to other races.</p>
-            </div>
-            <div id="Yuan-Ti">
-                <h2>Yuan-Ti</h2>
-                <p>The tribalized snakepeople of the Realms, yuan-ti are loyal to their dying breath.</p>
-            </div>
-            <div id="Tabaxi">
-                <h2>Tabaxi</h2>
-                <p>Agile and stealthy, the feline Tabaxi make for natural theives.</p>
-            </div>
-            <div id="Aasimar">
-                <h2>Aasimar</h2>
-                <p>Fallen angels and celestials, aasimar often seek to return to thier former glory among the stars.</p>
-            </div>
-            <div id="Bugbear">
-                <h2>Bugbear</h2>
-                <p>The strongest of the goblinoids, a lone bugbear has been the death of many a squad of soldiers.</p>
-            </div>
-            <div id="Changeling">
-                <h2>Changeling</h2>
-                <p>Shapeshifters and identity thieves, changelings hide their true appearance at all costs.</p>
-            </div>
-            <div id="Shifter">
-                <h2>Shifter</h2>
-                <p>The descendants of lycanthropes, shifters possess limited transformations, giving them considerable combat ability.</p>
-            </div>
-            <div id="Minotaur">
-                <h2>Minotaur</h2>
-                <p>The head of a bull on the body of a man, minotaurs are the sailors and mapmakers of the Forgotten Realms.</p>
-            </div>
-            <div id="Githyanki">
-                <h2>Githyanki</h2>
-                <p>Dedicated to the mastery of the sword, githyanki make for excellent duelists and warriors.</p>
-            </div>
-            <div id="Eladrin">
-                <h2>Eladrin</h2>
-                <p>Drawing from the seasons of nature, eladrin exploit their fey abilities to beguile their foes.</p>
-            </div>
-            <div id="Centaur">
-                <h2>Centaur</h2>
-                <p>The torsoe of a man on the body of a horse, centaurs make for natural archers and scouts.</p>
-            </div>            
-            <div id="Half-Giant">
-                <h2>Half-Giant</h2>
-                <p>With the strength to move mountains, half-giants disregard speed in favor of pure power.</p>
-            </div>
-            <div id="Merfolk">
-                <h2>Merfolk</h2>
-                <p>Denizens of the seas, merfolk vary from friendly to murderous, with few ways to tell which is which.</p>
-            </div>
-            <div id="Satyr">
-                <h2>Satyr</h2>
-                <p>The goat-footed men of the forests, satyrs make natural bards and druids.</p>
+            <div id="accordion"> <!-- Accordion is a JQUery setup. I understand approximately 2% of it, but it works. -->
+                <h3>Human</h3>
+                <div id="Human">
+                    <p>The everymen of the Forgotten Realms, humans are as versatile as they are numerous.</p>
+                    <button type=submit>Continue as Human</button>        
+                </div>
+                <h3>Elf</h3>
+                <div div="Elf">
+                    <p>Elves utilize their longevity to master their specialty, whether it be natural or arcane.</p>
+                    <button type=submit>Continue as Elf</button>
+                </div>
+                <h3>Dwarf</h3>
+                <div id="Dwarf">
+                    <p>Shaped from stone by Moradin himself, the dwarves' knowledge of stone and metal is unmatched.</p>
+                    <button type=submit>Continue as Dwarf</button>
+                </div>
+                <h3>Halfling</h3>
+                <div id="Halfling">
+                    <p>Short and sweet, halflings utilize thier stature to charm others, typically for their own benefit.</p>
+                    <button type=submit>Continue as Halfling</button>
+                </div>
+                <h3>Half-Elf</h3>
+                <div id="Half-Elf">
+                    <p>Descended from both humans and elves, half-elves live between two worlds, never quite fitting into either.</p>
+                    <button type=submit>Continue as Half-Elf</button>
+                </div>
+                <h3>Dragonborn</h3>
+                <div id="Dragonborn">
+                    <p>Scaled and proud, dragonborn call upon their draconic ancestry to unleash elemental powers upon thier foes.</p>
+                    <button type=submit>Continue as Dragonborn</button>
+                </div>
+                <h3>Tiefling</h3>
+                <div id="Tiefling">
+                    <p>The product of an ancient deal with demons, tieflings can summon hellfire to burn attackers.</p>
+                    <button type=submit>Continue as Tiefling</button>
+                </div>
+                <h3>Kalashtar</h3>
+                <div id="Kalashtar">
+                    <p>Possessed by spirits, kalashtar leverage psychic prowess to change the minds of foes, while resisting change themselves.</p>
+                    <button type=submit>Continue as Kalashtar</button>
+                </div>
+                <h3>Warforged</h3>
+                <div id="Warforged">
+                    <p>Automata from an ancient time, each warforged has a purpose, which they pursue relentlessly</p>
+                    <button type=submit>Continue as Warforged</button>
+                </div>
+                <h3>Kenku</h3>
+                <div id="Kenku">
+                    <p>Bearing resemblance to humanoid ravens, kenku can mimic any sound perfectly, but lack any spark of creativity.</p>
+                    <button type=submit>Continue as Kenku</button>
+                </div>
+                <h3>Gnome</h3>
+                <div id="Gnome">
+                    <p>Tinkerers, animal trainers, and tricksters, gnomes are as well-known for their pranks as they are their amazing inventions</p>
+                    <button type=submit>Continue as Gnome</button>
+                </div>
+                <h3>Half-Orc</h3>
+                <div id="Half-Orc">
+                    <p>Combining the best traits of humans and orcs, Half-Orcs are worthy competitors, both on and off the battlefield.</p>
+                    <button type=submit>Continue as Half-Orc</button>
+                </div>
+                <h3>Goliath</h3>
+                <div id="Goliath">
+                    <p>Towering creatures of stone, goliath possess unmatched strength, at the cost of intelligence.</p>
+                    <button type=submit>Continue as Goliath</button>
+                </div>
+                <h3>Goblin</h3>
+                <div id="Goblin">
+                    <p>Kleptomaniacs and cowards, goblins are most famous as foes to adventurers, but occasionally embark on adventures of their own.</p>
+                    <button type=submit>Continue as Goblin</button>
+                </div>
+                <h3>Kobold</h3>
+                <div id="Kobold">
+                    <p>Small and agile, kobolds make up for in number what they lack in strength.</p>
+                    <button type=submit>Continue as Kobold</button>
+                </div>
+                <h3>Genasi</h3>
+                <div id="Genasi">
+                    <p>The children of djinni, Genasi are elemental forces incarnate.</p>
+                    <button type=submit>Continue as Genasi</button>
+                </div>
+                <h3>Aarakocra</h3>
+                <div id="Aarakocra"> 
+                    <p>The tribal aarakocra come from the Elemental Plane of Air, and have the wingspan to prove it.</p>
+                    <button type=submit>Continue as Aarakocra</button>
+                </div>
+                <h3>Hobgoblin</h3>
+                <div id="Hobgoblin">
+                    <p>Smarter and stronger than your average goblin, Hobgoblins often emerge as leaders of the lesser monstrous races.</p>
+                    <button type=submit>Continue as Hobgoblin</button>
+                </div>
+                <h3>Orc</h3>
+                <div id="Orc">
+                    <p>Viewed as bloodthirsty savages by humanoids everywhere, the orcs are a terrible sight in any battle.</p>
+                    <button type=submit>Continue as Orc</button>
+                </div>
+                <h3>Firbolg</h3>
+                <div id="Firbolg">
+                    <p>Protectors of the natural world, Firbolgs are the furrier cousins of the Goliaths.</p>
+                    <button type=submit>Continue as Firbolg</button>
+                </div>
+                <h3>Lizardfolk</h3>
+                <div id="Lizardfolk">
+                    <p>Utterly alien in nature, the lizardfolk pursue goals that are indecipherable to other races.</p>
+                    <button type=submit>Continue as Lizardfolk</button>
+                </div>
+                <h3>Yuan-Ti</h3>
+                <div id="Yuan-Ti">
+                    <p>The tribalized snakepeople of the Realms, yuan-ti are loyal to their dying breath.</p>
+                    <button type=submit>Continue as Yuan-Ti</button>
+                </div>
+                <h3>Tabaxi</h3>
+                <div id="Tabaxi">
+                    <p>Agile and stealthy, the feline Tabaxi make for natural theives.</p>
+                    <button type=submit>Continue as Tabaxi</button>
+                </div>
+                <h3>Aasimar</h3>
+                <div id="Aasimar">
+                    <p>Fallen angels and celestials, aasimar often seek to return to thier former glory among the stars.</p>
+                    <button type=submit>Continue as Aasimar</button>
+                </div>
+                <h3>Bugbear</h3>
+                <div id="Bugbear">
+                    <p>The strongest of the goblinoids, a lone bugbear has been the death of many a squad of soldiers.</p>
+                    <button type=submit>Continue as Bugbear</button>
+                </div>
+                <h3>Changeling</h3>
+                <div id="Changeling">
+                    <p>Shapeshifters and identity thieves, changelings hide their true appearance at all costs.</p>
+                    <button type=submit>Continue as Changeling</button>
+                </div>
+                <h3>Shifter</h3>
+                <div id="Shifter">
+                    <p>The descendants of lycanthropes, shifters possess limited transformations, giving them considerable combat ability.</p>
+                    <button type=submit>Continue as Shifter</button>
+                </div>
+                <h3>Minotaur</h3>
+                <div id="Minotaur">
+                    <p>The head of a bull on the body of a man, minotaurs are the sailors and mapmakers of the Forgotten Realms.</p>
+                    <button type=submit>Continue as Minotaur</button>
+                </div>
+                <h3>Githyanki</h3>
+                <div id="Githyanki">
+                    <p>Dedicated to the mastery of the sword, githyanki make for excellent duelists and warriors.</p>
+                    <button type=submit>Continue as Githyanki</button>
+                </div>
+                <h3>Eladrin</h3>
+                <div id="Eladrin">
+                    <p>Drawing from the seasons of nature, eladrin exploit their fey abilities to beguile their foes.</p>
+                    <button type=submit>Continue as Eladrin</button>
+                </div>
+                <h3>Centaur</h3>
+                <div id="Centaur">
+                    <p>The torsoe of a man on the body of a horse, centaurs make for natural archers and scouts.</p>
+                    <button type=submit>Continue as Centaur</button>
+                </div>
+                <h3>Half-Giant</h3>            
+                <div id="Half-Giant">
+                    <p>With the strength to move mountains, half-giants disregard speed in favor of pure power.</p>
+                    <button type=submit>Continue as Half-Giant</button>
+                </div>
+                <h3>Merfolk</h3>
+                <div id="Merfolk">
+                    <p>Denizens of the seas, merfolk vary from friendly to murderous, with few ways to tell which is which.</p>
+                    <button type=submit>Continue as Merfolk</button>
+                </div>
+                <h3>Satyr</h3>
+                <div id="Satyr">
+                    <p>The goat-footed men of the forests, satyrs make natural bards and druids.</p>
+                    <button type=submit>Continue as Satyr</button>
+                </div>
             </div>
             <form action="chargeneratorrace.html" method="post">
                 <h1>Choose Race</h1>

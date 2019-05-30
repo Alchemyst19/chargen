@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
-        <!-- <script> -->
+        <!-- <script>
              $( function() {
              $( "#accordion" ).accordion();
              } );
@@ -27,182 +27,421 @@
         </header>
         </div>
         <div class="wrapper">
-            <ul>Races
-                <li>Human</li>
-                <li>Elf</li>
-                <li>Dwarf</li>
+            <ul id="racenav">Races
+                <li><a href="#Human">Human</a></li>
+                <li><a href="#Elf">Elf</a></li>
+                <li><a href="#Dwarf">Dwarf</a></li>
+                <li><a href="#Halfling">Halfling</a></li>
+                <li><a href="#Half-Elf">Half-Elf</a></li>
+                <li><a href="#Dragonborn">Dragonborn</a></li>
+                <li><a href="#Tiefling">Tiefling</a></li>
+                <li><a href="#Kalashtar">Kalashtar</a></li>
+                <li><a href="#Warforged">Warforged</a></li>
+                <li><a href="#Kenku">Keku</a></li>
+                <li><a href="#Gnome">Gnome</a></li>
+                <li><a href="#Half-Orc">Half-Orc</a></li>
+                <li><a href="#Goliath">Goliath</a></li>
+                <li><a href="Goblin#">Goblin</a></li>
+                <li><a href="#Kobold">Kobold</a></li>
+                <li><a href="#Genasi">Genasi</a></li>
+                <li><a href="#Aarakocra">Aarakocra</a></li>
+                <li><a href="#Hobgoblin">Hobgoblin</a></li>
+                <li><a href="#Orc">Orc</a></li>
+                <li><a href="#Firbolg">Firbolg</a></li>
+                <li><a href="#Lizardfolk">Lizardfolk</a></li>
+                <li><a href="#Yuan-Ti">Yuan-Ti</a></li>
+                <li><a href="#Tabaxi">Tabaxi</a></li>
+                <li><a href="#Aasimar">Aasimar</a></li>
+                <li><a href="#Bugbear">Bugbear</a></li>
+                <li><a href="#Changeling">Changeling</a></li>
+                <li><a href="#Shifter">Shifter</a></li>
+                <li><a href="#Minotaur">Minotaur</a></li>
+                <li><a href="#Githyanki">Githyanki</a></li>
+                <li><a href="#Eladrin">Eladrin</a></li>
+                <li><a href="#Centaur">Centaur</a></li>
+                <li><a href="#Half-Giant">Half-Giant</a></li>
+                <li><a href="#Merfolk">Merfolk</a></li>
+                <li><a href="#Satyr">Satyr</a></li>
             </ul>
             <div id="accordion"> <!-- Accordion is a JQUery setup. I understand approximately 2% of it, but it works. -->
-                <h3>Human</h3>
                 <div id="Human">
-                    <p>The everymen of the Forgotten Realms, humans are as versatile as they are numerous.</p>
-                    <h4>Ability Score Modifiers</h4>
-                    <p>All of your ability scores increase by one.</p>
+                    <h3>Human</h3>
+                    <p>Humans are the most adaptable and ambitious people among the common races. They live fully in the present - making them well-suited to adventuring life - but also plan for the future, striving to leave a lasting legacy. Individually and as a group, humans are adaptable opportunists, and they stay alert to changing social and political dynamics.</p>
+                    <h4>Ability Score Increase</h4>
+                    <p>Your ability scores each increase by 1.</p>
+                    <h4>Age</h4>
+                    <p>Humans reach adulthood in their late teens and live less than a century.</p>
+                    <h4>Alignment</h4>
+                    <p>Humans tend towards no particular alignment.</p>
+                    <h4>Size</h4>
+                    <p>Humans vary widely in height and build, from barely 5 feet to well over 6 feet tall. Your size is Medium.</p>
+                    <h4>Speed</h4>
+                    <p>Your base walking speed is 30 feet.</p>
+                    <h4>Languages</h4>
+                    <p>You can speak, read and write Common and one extra language of your choice.</p>
                     <button type=submit>Continue as Human</button>        
                 </div>
-                <h3>Elf</h3>
                 <div id="Elf">
+                    <h3>Elf</h3>
                     <p>Elves utilize their longevity to master their specialty, whether it be natural or arcane.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Elf</button>
                 </div>
-                <h3>Dwarf</h3>
                 <div id="Dwarf">
+                    <h3>Dwarf</h3>
                     <p>Shaped from stone by Moradin himself, the dwarves' knowledge of stone and metal is unmatched.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Dwarf</button>
                 </div>
-                <h3>Halfling</h3>
                 <div id="Halfling">
+                    <h3>Halfling</h3>
                     <p>Short and sweet, halflings utilize thier stature to charm others, typically for their own benefit.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Halfling</button>
                 </div>
-                <h3>Half-Elf</h3>
                 <div id="Half-Elf">
+                    <h3>Half-Elf</h3>
                     <p>Descended from both humans and elves, half-elves live between two worlds, never quite fitting into either.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Half-Elf</button>
                 </div>
-                <h3>Dragonborn</h3>
                 <div id="Dragonborn">
+                    <h3>Dragonborn</h3>
                     <p>Scaled and proud, dragonborn call upon their draconic ancestry to unleash elemental powers upon thier foes.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Dragonborn</button>
                 </div>
-                <h3>Tiefling</h3>
                 <div id="Tiefling">
+                    <h3>Tiefling</h3>
                     <p>The product of an ancient deal with demons, tieflings can summon hellfire to burn attackers.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Tiefling</button>
                 </div>
-                <h3>Kalashtar</h3>
                 <div id="Kalashtar">
+                    <h3>Kalashtar</h3>
                     <p>Possessed by spirits, kalashtar leverage psychic prowess to change the minds of foes, while resisting change themselves.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Kalashtar</button>
                 </div>
-                <h3>Warforged</h3>
                 <div id="Warforged">
+                    <h3>Warforged</h3>
                     <p>Automata from an ancient time, each warforged has a purpose, which they pursue relentlessly</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Warforged</button>
                 </div>
-                <h3>Kenku</h3>
                 <div id="Kenku">
+                    <h3>Kenku</h3>
                     <p>Bearing resemblance to humanoid ravens, kenku can mimic any sound perfectly, but lack any spark of creativity.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Kenku</button>
                 </div>
-                <h3>Gnome</h3>
                 <div id="Gnome">
+                    <h3>Gnome</h3>
                     <p>Tinkerers, animal trainers, and tricksters, gnomes are as well-known for their pranks as they are their amazing inventions</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Gnome</button>
                 </div>
-                <h3>Half-Orc</h3>
                 <div id="Half-Orc">
+                    <h3>Half-Orc</h3>
                     <p>Combining the best traits of humans and orcs, Half-Orcs are worthy competitors, both on and off the battlefield.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Half-Orc</button>
                 </div>
-                <h3>Goliath</h3>
                 <div id="Goliath">
+                    <h3>Goliath</h3>
                     <p>Towering creatures of stone, goliath possess unmatched strength, at the cost of intelligence.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Goliath</button>
                 </div>
-                <h3>Goblin</h3>
                 <div id="Goblin">
+                    <h3>Goblin</h3>
                     <p>Kleptomaniacs and cowards, goblins are most famous as foes to adventurers, but occasionally embark on adventures of their own.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Goblin</button>
                 </div>
-                <h3>Kobold</h3>
                 <div id="Kobold">
+                    <h3>Kobold</h3>
                     <p>Small and agile, kobolds make up for in number what they lack in strength.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Kobold</button>
                 </div>
-                <h3>Genasi</h3>
                 <div id="Genasi">
+                    <h3>Genasi</h3>
                     <p>The children of djinni, Genasi are elemental forces incarnate.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Genasi</button>
                 </div>
-                <h3>Aarakocra</h3>
-                <div id="Aarakocra"> 
+                <div id="Aarakocra">
+                    <h3>Aarakocra</h3> 
                     <p>The tribal aarakocra come from the Elemental Plane of Air, and have the wingspan to prove it.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Aarakocra</button>
                 </div>
-                <h3>Hobgoblin</h3>
                 <div id="Hobgoblin">
+                    <h3>Hobgoblin</h3>
                     <p>Smarter and stronger than your average goblin, Hobgoblins often emerge as leaders of the lesser monstrous races.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Hobgoblin</button>
                 </div>
-                <h3>Orc</h3>
                 <div id="Orc">
+                    <h3>Orc</h3>
                     <p>Viewed as bloodthirsty savages by humanoids everywhere, the orcs are a terrible sight in any battle.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Orc</button>
                 </div>
-                <h3>Firbolg</h3>
                 <div id="Firbolg">
+                    <h3>Firbolg</h3>
                     <p>Protectors of the natural world, Firbolgs are the furrier cousins of the Goliaths.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Firbolg</button>
                 </div>
-                <h3>Lizardfolk</h3>
                 <div id="Lizardfolk">
+                    <h3>Lizardfolk</h3>
                     <p>Utterly alien in nature, the lizardfolk pursue goals that are indecipherable to other races.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Lizardfolk</button>
                 </div>
-                <h3>Yuan-Ti</h3>
                 <div id="Yuan-Ti">
+                    <h3>Yuan-Ti</h3>
                     <p>The tribalized snakepeople of the Realms, yuan-ti are loyal to their dying breath.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Yuan-Ti</button>
                 </div>
-                <h3>Tabaxi</h3>
                 <div id="Tabaxi">
+                    <h3>Tabaxi</h3>
                     <p>Agile and stealthy, the feline Tabaxi make for natural theives.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Tabaxi</button>
                 </div>
-                <h3>Aasimar</h3>
                 <div id="Aasimar">
+                    <h3>Aasimar</h3>
                     <p>Fallen angels and celestials, aasimar often seek to return to thier former glory among the stars.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Aasimar</button>
                 </div>
-                <h3>Bugbear</h3>
                 <div id="Bugbear">
+                    <h3>Bugbear</h3>
                     <p>The strongest of the goblinoids, a lone bugbear has been the death of many a squad of soldiers.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Bugbear</button>
                 </div>
-                <h3>Changeling</h3>
                 <div id="Changeling">
+                    <h3>Changeling</h3>
                     <p>Shapeshifters and identity thieves, changelings hide their true appearance at all costs.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Changeling</button>
                 </div>
-                <h3>Shifter</h3>
                 <div id="Shifter">
+                    <h3>Shifter</h3>
                     <p>The descendants of lycanthropes, shifters possess limited transformations, giving them considerable combat ability.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Shifter</button>
                 </div>
-                <h3>Minotaur</h3>
                 <div id="Minotaur">
+                    <h3>Minotaur</h3>
                     <p>The head of a bull on the body of a man, minotaurs are the sailors and mapmakers of the Forgotten Realms.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Minotaur</button>
                 </div>
-                <h3>Githyanki</h3>
                 <div id="Githyanki">
+                    <h3>Githyanki</h3>
                     <p>Dedicated to the mastery of the sword, githyanki make for excellent duelists and warriors.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Githyanki</button>
                 </div>
-                <h3>Eladrin</h3>
                 <div id="Eladrin">
+                    <h3>Eladrin</h3>
                     <p>Drawing from the seasons of nature, eladrin exploit their fey abilities to beguile their foes.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Eladrin</button>
                 </div>
-                <h3>Centaur</h3>
                 <div id="Centaur">
+                    <h3>Centaur</h3>
                     <p>The torsoe of a man on the body of a horse, centaurs make for natural archers and scouts.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Centaur</button>
-                </div>
-                <h3>Half-Giant</h3>            
+                </div>            
                 <div id="Half-Giant">
+                    <h3>Half-Giant</h3>
                     <p>With the strength to move mountains, half-giants disregard speed in favor of pure power.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Half-Giant</button>
                 </div>
-                <h3>Merfolk</h3>
                 <div id="Merfolk">
+                    <h3>Merfolk</h3>
                     <p>Denizens of the seas, merfolk vary from friendly to murderous, with few ways to tell which is which.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Merfolk</button>
                 </div>
-                <h3>Satyr</h3>
                 <div id="Satyr">
+                    <h3>Satyr</h3>
                     <p>The goat-footed men of the forests, satyrs make natural bards and druids.</p>
+                    <h4>Ability Score Increase</h4>
+                    <h4>Age</h4>
+                    <h4>Alignment</h4>
+                    <h4>Size</h4>
+                    <h4>Speed</h4>
+                    <h4>Languages</h4>
                     <button type=submit>Continue as Satyr</button>
                 </div>
             </div>

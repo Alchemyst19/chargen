@@ -83,8 +83,21 @@ nav a {
 
 .wrapper {
     padding-top: 100px;
+    display: flex;
     flex: 1;
     margin: 0 auto;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+
+h4 {
+    font-size: 1em;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+.racenav {
+    text-decoration: none;
 }
 
 a.racelink:hover {

@@ -71,7 +71,7 @@ nav a {
     background-color: slategray;
     text-align: center;
     padding-top: 5px;
-    height: 100px;
+    height: 90px;
     margin-bottom: auto;
     width: 100%;
     z-index: 1000;
@@ -79,10 +79,13 @@ nav a {
     flex-direction: column;
     flex: 1;
     justify-content: space-between;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
 }
 
 .wrapper {
-    padding-top: 100px;
+    top: 200px;
     display: flex;
     flex: 1;
     margin: 0 auto;
@@ -99,6 +102,9 @@ h4 {
 
 .racenav {
     text-decoration: none;
+    padding-right: 20px;
+    position: fixed;
+    padding-top: 100px;
 }
 
 a.racelink:hover {
@@ -109,6 +115,12 @@ a.racelink:hover {
 /* .race {
     display: flex;
 } */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 
 
@@ -129,13 +141,12 @@ a.racelink:hover {
         vertical-align: top;
     }
 
-    .clearfix::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
     .main-header {
         flex-direction: row;
+    }
+
+    h1 {
+        font-size: 1em;
     }
 }
 
@@ -146,5 +157,9 @@ a.racelink:hover {
 
     .wrapper div {
         width: inherit;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 }

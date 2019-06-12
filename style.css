@@ -26,6 +26,11 @@ h1 {
     flex: 1;
 }
 
+li {
+    text-decoration: none;
+    border: 1px rgb(114, 110, 110) solid;
+}
+
 footer {
     background-color: slategray;
     margin-top: auto;
@@ -85,7 +90,6 @@ nav a {
 }
 
 .wrapper {
-    top: 200px;
     display: flex;
     flex: 1;
     margin: 0 auto;
@@ -108,8 +112,17 @@ h4 {
 }
 
 a.racelink:hover {
-    color: rgb(12, 9, 3);
-    color: red;
+    color: slategrey;
+}
+
+#racenav a:hover,
+#sourcenav a:hover {
+    color: slategray;
+}
+
+#racenav a:checked,
+#sourcenav a:checked {
+    color: grey;
 }
 
 /* .race {

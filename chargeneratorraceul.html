@@ -19,48 +19,56 @@
                     <a href="chargen.html">About</a>
             </nav>
         </header>
-        </div>
         <div class="wrapper">
-            <ul id="racenav">Races
-                <li><a href="#Dwarf" onclick="hideRace('Dwarf')">Dwarf</a></li>
-                <li><a href="#Elf" onclick="hideRace('Elf')">Elf</a></li>
-                <li><a href="#Halfling" onclick="hideRace('Halfling')">Halfling</a></li>
-                <li><a href="#Human" onclick="hideRace('Human')">Human</a></li>
-                <li><a href="#Dragonborn" onclick="hideRace('Dragonborn')">Dragonborn</a></li>
-                <li><a href="#Gnome" onclick="hideRace('Gnome')">Gnome</a></li>
-                <li><a href="#Half-Elf" onclick="hideRace('Half-Elf')">Half-Elf</a></li>
-                <li><a href="#Half-Orc" onclick="hideRace('Half-Orc')">Half-Orc</a></li>
-                <li><a href="#Tiefling" onclick="hideRace('Tiefling')">Tiefling</a></li>
-                <li><a href="#Aarakocra" onclick="hideRace('Aarakocra')">Aarakocra</a></li>
-                <li><a href="#Genasi" onclick="hideRace('Genasi')">Genasi</a></li>
-                <li><a href="#Goliath" onclick="hideRace('Goliath')">Goliath</a></li>
-                <li><a href="#Aasimar" onclick="hideRace('Aasimar')">Aasimar</a></li>
-                <li><a href="#Bugbear" onclick="hideRace('Bugbear')">Bugbear</a></li>
-                <li><a href="#Firbolg" onclick="hideRace('Firbolg')">Firbolg</a></li>
-                <li><a href="#Goblin" onclick="hideRace('Goblin')">Goblin</a></li>
-                <li><a href="#Hobgoblin" onclick="hideRace('Hobgoblin')">Hobgoblin</a></li>
-                <li><a href="#Kenku" onclick="hideRace('Kenku')">Kenku</a></li>
-                <li><a href="#Kobold" onclick="hideRace('Kobold')">Kobold</a></li>
-                <li><a href="#Lizardfolk" onclick="hideRace('Lizardfolk')">Lizardfolk</a></li>
-                <li><a href="#Orc" onclick="hideRace('Orc')">Orc</a></li>
-                <li><a href="#Tabaxi" onclick="hideRace('Tabaxi')">Tabaxi</a></li>
-                <li><a href="#Triton" onclick="hideRace('Triton')">Triton</a></li>
-                <li><a href="#Yuan-Ti" onclick="hideRace('Yuan-Ti')">Yuan-Ti</a></li>
-                <li><a href="#Tortle" onclick="hideRace('Tortle')">Tortle</a></li>
-                <li><a href="#Gith" onclick="hideRace('Gith')">Gith</a></li>
-                <li><a href="#Changeling" onclick="hideRace('Changeling')">Changeling</a></li>
-                <li><a href="#Kalashtar" onclick="hideRace('Kalashtar')">Kalashtar</a></li>
-                <li><a href="#Shifter" onclick="hideRace('Shifter')">Shifter</a></li>
-                <li><a href="#Warforged" onclick="hideRace('Warforged')">Warforged</a></li>
-                <li><a href="#Centaur" onclick="hideRace('Centaur')">Centaur</a></li>
-                <li><a href="#Loxodon" onclick="hideRace('Loxodon')">Loxodon</a></li>
-                <li><a href="#Minotaur" onclick="hideRace('Minotaur')">Minotaur</a></li>
-                <li><a href="#Simic" onclick="hideRace('Simic')">Simic Hybrid</a></li>
-                <li><a href="#Vedalken" onclick="hideRace('Vedalken')">Vedalken</a></li>
-                <li><a href="#Eladrin" onclick="hideRace('Eladrin')">Eladrin</a></li>
-                <li><a href="#Half-Giant" onclick="hideRace('Half-Giant')">Half-Giant</a></li>
-                <li><a href="#Satyr" onclick="hideRace('Satyr')">Satyr</a></li>
+            <ul id="sourcenav"><a href="#" onclick="showSource()">Sort By Source</a>
+                <li><a href='#' onclick='hideSource("handbook")'>Player's Handbook</a></li>
+                <li><a href='#' onclick='hideSource("elemental")'>Elemental Evil</a></li>
+                <li><a href='#' onclick='hideSource("volo")'>Volo's Guide</a></li>
+                <li><a href='#' onclick='hideSource("eberron")'>Eberron</a></li>
+                <li><a href='#' onclick='hideSource("ravnica")'>Ravnica</a></li>
+                <li><a href='#' onclick='hideSource("misc")'>Miscellaneous</a></li>
             </ul>
+            <ul id="racenav"><a href=# onclick="showRace()">Races</a>
+                <li class="handbook"><a href="#" onclick="hideRace('Dwarf')">Dwarf</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Elf')">Elf</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Halfling')">Halfling</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Human')">Human</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Dragonborn')">Dragonborn</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Gnome')">Gnome</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Half-Elf')">Half-Elf</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Half-Orc')">Half-Orc</a></li>
+                <li class="handbook"><a href="#" onclick="hideRace('Tiefling')">Tiefling</a></li>
+                <li class="elemental"><a href="#" onclick="hideRace('Aarakocra')">Aarakocra</a></li>
+                <li class="elemental"><a href="#" onclick="hideRace('Genasi')">Genasi</a></li>
+                <li class="elemental"><a href="#" onclick="hideRace('Goliath')">Goliath</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Aasimar')">Aasimar</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Bugbear')">Bugbear</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Firbolg')">Firbolg</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Goblin')">Goblin</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Hobgoblin')">Hobgoblin</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Kenku')">Kenku</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Kobold')">Kobold</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Lizardfolk')">Lizardfolk</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Orc')">Orc</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Tabaxi')">Tabaxi</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Triton')">Triton</a></li>
+                <li class="volo"><a href="#" onclick="hideRace('Yuan-Ti')">Yuan-Ti</a></li>
+                <li class="misc"><a href="#" onclick="hideRace('Tortle')">Tortle</a></li>
+                <li class="misc"><a href="#" onclick="hideRace('Gith')">Gith</a></li>
+                <li class="eberron"><a href="#" onclick="hideRace('Changeling')">Changeling</a></li>
+                <li class="eberron"><a href="#" onclick="hideRace('Kalashtar')">Kalashtar</a></li>
+                <li class="eberron"><a href="#" onclick="hideRace('Shifter')">Shifter</a></li>
+                <li class="eberron"><a href="#" onclick="hideRace('Warforged')">Warforged</a></li>
+                <li class="ravnica"><a href="#" onclick="hideRace('Centaur')">Centaur</a></li>
+                <li class='ravnica'><a href="#" onclick="hideRace('Loxodon')">Loxodon</a></li>
+                <li class="ravnica"><a href="#" onclick="hideRace('Minotaur')">Minotaur</a></li>
+                <li class="ravnica"><a href="#" onclick="hideRace('Simic')">Simic Hybrid</a></li>
+                <li class="ravnica"><a href="#" onclick="hideRace('Vedalken')">Vedalken</a></li>
+                <li class="misc"><a href="#" onclick="hideRace('Eladrin')">Eladrin</a></li>
+                <li class="misc"><a href="#" onclick="hideRace('Half-Giant')">Half-Giant</a></li>
+                <li class="misc"><a href="#" onclick="hideRace('Satyr')">Satyr</a></li>
+            </ul>
+
             <div id="accordion"> <!-- Accordion is a JQUery setup. I understand approximately 2% of it, but it works. -->
                 <div id="Dwarf" class="race handbook">
                     <h3>Dwarf</h3>
@@ -404,7 +412,7 @@
                     <p><b>Languages: </b></p>
                     <button type=submit>Continue as Yuan-Ti</button>
                 </div>
-                <div id="Tortle" class="race tortle">
+                <div id="Tortle" class="race misc">
                     <h3>Tortle</h3>
                     <p>Nomadic and adventurous, the tortoise-like Tortles rely on their hard shell for defense.</p>
                     <p><b>Ability Score Increase: </b></p>
@@ -415,7 +423,7 @@
                     <p><b>Languages: </b></p>
                     <button type=submit>Continue as Tortle</button>
                 </div>
-                <div id="Gith" class="race mordenkainen">
+                <div id="Gith" class="race misc">
                     <h3>Gith</h3>
                     <p>Once servants of the mind flayers, the psionic gith have split into two races, the martial githyanki and the magical githzerai</p>
                     <p>Dedicated to the mastery of the sword, githyanki make for excellent duelists and warriors.</p>
@@ -526,7 +534,7 @@
                     <p><b>Languages: </b></p>
                     <button type=submit>Continue as Vedalken</button>
                 </div>
-                <div id="Eladrin" class="race">
+                <div id="Eladrin" class="race misc">
                     <h3>Eladrin</h3>
                     <p>Drawing from the seasons of nature, eladrin exploit their fey abilities to beguile their foes.</p>
                     <p><b>Ability Score Increase: </b></p>
@@ -537,7 +545,7 @@
                     <p><b>Languages: </b></p>
                     <button type=submit>Continue as Eladrin</button>
                 </div>            
-                <div id="Half-Giant" class="race">
+                <div id="Half-Giant" class="race misc">
                     <h3>Half-Giant</h3>
                     <p>With the strength to move mountains, half-giants disregard speed in favor of pure power.</p>
                     <p><b>Ability Score Increase: </b></p>
@@ -548,7 +556,7 @@
                     <p><b>Languages: </b></p>
                     <button type=submit>Continue as Half-Giant</button>
                 </div>
-                <div id="Satyr" class="race">
+                <div id="Satyr" class="race misc">
                     <h3>Satyr</h3>
                     <p>The goat-footed men of the forests, satyrs make natural bards and druids.</p>
                     <p><b>Ability Score Increase: </b></p>

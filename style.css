@@ -75,21 +75,20 @@ nav a {
 .main-header {
     background-color: slategray;
     text-align: center;
-    padding-top: 5px;
     height: 90px;
     margin-bottom: auto;
     width: 100%;
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    flex: 1;
+    /* flex: 1; */
     justify-content: space-between;
     position: sticky;
     align-self: flex-start;
     top: 0;
 }
 
-.wrapper {
+#wrapper {
     display: flex;
     flex: 1;
     margin: 0 auto;
@@ -104,11 +103,8 @@ h4 {
     border: none;
 }
 
-.racenav {
-    text-decoration: none;
-    padding-right: 20px;
-    position: fixed;
-    padding-top: 100px;
+#racenav, #sourcenav {
+    list-style-type: none;
 }
 
 a.racelink:hover {
@@ -125,41 +121,90 @@ a.racelink:hover {
     color: grey;
 }
 
-/* .race {
-    display: flex;
-} */
-
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
+.navbutton {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+    position: sticky;
+    align-self: flex-start;
+    top: 90px;
+}
+
+#navbar {
+    background-color: grey;
+    color: blue;
+    display: none;
+    text-align: center;
+    height: auto;
+    width: 50%;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+#offbutton {
+    display: none;
+    position: sticky;
+    align-self: flex-start;
+}
+
+#accordion {
+    padding-left: 10px;
+}
 
 
 /* Media Queries */
 
+@media (max-height: 600px){
 
+    .main-header {
+        height: 60px;
+        /* font-size: medium; */
+    }
+    h1{
+        padding-top: 5px;
+        font-size: 1em;
+    }
+    .navbutton {
+        top: 45px;
+    }
+}
 
 @media (min-width: 760px) {
     body {
-        font-size: 2em;
+        /* font-size: 2em; */
     }
-    .wrapper {
-        width: 80%;
+    #wrapper {
         margin: 0 auto;
+        width: 100vw;
     }
-    .wrapper div {
-        width: inherit;
+    #accordion {
+        padding-left: 30px;
         vertical-align: top;
     }
 
     .main-header {
         flex-direction: row;
+        height: 70px;
     }
 
     h1 {
         font-size: 1em;
+    }
+
+    .navbutton {
+        font-size: medium;
+        top: 70px;
+    }
+
+    #navbar {
+        /* justify-content: space-around; */
+        width: 30%;
     }
 }
 
@@ -168,11 +213,15 @@ a.racelink:hover {
         font-size: 1em;
     }
 
-    .wrapper div {
-        width: inherit;
-    }
-
     h1 {
         font-size: 2em;
+    }
+
+    #navbar {
+        width: 20%;
+    }
+
+    #accordion {
+        width: 70%;
     }
 }

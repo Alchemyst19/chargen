@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: #DCD6F7;
 }
 
 a {
@@ -32,8 +33,8 @@ li {
 }
 
 footer {
-    background-color: slategray;
-    margin-top: auto;
+    background-color: #8093E5;
+    padding-top: 10px;
     width: 100%;
     text-align: center;
     flex: 1;
@@ -47,12 +48,19 @@ nav a {
 
 .homescreen {
     height: 100vh;
-    background-color: slategray;
+    background-color: #424874;
+    color: black;
 }
 
 .menu {
     margin: 30vh 20vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a:hover {
+    color: #8093E5;
 }
 
 .main-nav {
@@ -67,13 +75,13 @@ nav a {
     padding: 20px;
     margin: 10px;
     display: flex;
-    background-color: gray;
+    background-color: #DCD6F7;
     justify-content: center;
     align-items: center;
 }
 
 .main-header {
-    background-color: slategray;
+    background-color: #424874;
     text-align: center;
     height: 90px;
     margin-bottom: auto;
@@ -86,13 +94,22 @@ nav a {
     position: sticky;
     align-self: flex-start;
     top: 0;
+    border-bottom: 5px solid black;
+}
+
+#disclaimer {
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    background: #8093E5;
+    color: black;
+    text-align: center;
 }
 
 #wrapper {
     display: flex;
     flex: 1;
     margin: 0 auto;
-    padding-bottom: 100px;
     justify-content: space-between;
 }
 
@@ -108,17 +125,26 @@ h4 {
 }
 
 a.racelink:hover {
-    color: slategrey;
+    color: #8093E5;
+}
+
+a.hover {
+    color: #8093E5;
 }
 
 #racenav a:hover,
-#sourcenav a:hover {
-    color: slategray;
+#sourcenav a:hover,
+.main-header a:hover {
+    color: #8093E5;
 }
 
 #racenav a:checked,
 #sourcenav a:checked {
     color: grey;
+}
+
+.race {
+    border-bottom: 5px solid black;
 }
 
 .clearfix::after {
@@ -133,12 +159,12 @@ a.racelink:hover {
     text-align: center;
     position: sticky;
     align-self: flex-start;
-    top: 90px;
+    top: 100px;
 }
 
 #navbar {
-    background-color: grey;
-    color: blue;
+    background-color: #346660;
+    color: #DCD6F7;
     display: none;
     text-align: center;
     height: auto;
@@ -158,6 +184,18 @@ a.racelink:hover {
 }
 
 
+#aboutwrapper,
+#randomwrapper {
+    height: 80vh;
+}
+
+#aboutwrapper,
+#randomwrapper,
+#genwrapper {
+    width: 80%;
+    align-self: center;
+}
+
 /* Media Queries */
 
 @media (max-height: 600px){
@@ -176,12 +214,12 @@ a.racelink:hover {
 }
 
 @media (min-width: 760px) {
-    body {
-        /* font-size: 2em; */
-    }
+    /* body {
+        /* font-size: 2em;
+    } */
     #wrapper {
         margin: 0 auto;
-        width: 100vw;
+        width: 100%;
     }
     #accordion {
         padding-left: 30px;
@@ -223,5 +261,6 @@ a.racelink:hover {
 
     #accordion {
         width: 70%;
+        margin-right: 10px;
     }
 }

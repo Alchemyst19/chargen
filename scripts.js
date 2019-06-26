@@ -16,6 +16,8 @@ function showRace () {
     // toggleNav(2);
 }
 
+// hideSource and showSource are not currently utilized, but are present to simplify adding other races in.
+
 function hideSource (clickSource) {
     var x = document.getElementsByClassName("race");
     for (let z=0; z<x.length; z++){

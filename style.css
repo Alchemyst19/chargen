@@ -8,6 +8,8 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background: #DCD6F7;
+    /* width: 100vw; */
+    overflow-y: scroll;
 }
 
 a {
@@ -38,6 +40,8 @@ footer {
     width: 100%;
     text-align: center;
     flex: 1;
+    max-height: 50px;
+    margin-top: auto;
 }
 
 nav a {
@@ -78,13 +82,14 @@ nav a {
     background-color: #DCD6F7;
     justify-content: center;
     align-items: center;
+    min-width: 100px;
 }
 
 .main-header {
     background-color: #424874;
     text-align: center;
     height: 90px;
-    margin-bottom: auto;
+    /* margin-bottom: auto; */
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -124,7 +129,7 @@ h4 {
     list-style-type: none;
 }
 
-a.racelink:hover {
+a.genlink:hover {
     color: #8093E5;
 }
 
@@ -194,6 +199,30 @@ a.hover {
 #genwrapper {
     width: 80%;
     align-self: center;
+}
+
+.button {
+    font: bold Arial;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #333333;
+    padding: 2px 6px 2px 6px;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: 1px solid #CCCCCC;
+}
+
+/* Scrollbar Customizations */
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+::-webkit-scrollbar-track {
+    background: #424874;
+}
+::-webkit-scrollbar-thumb {
+    background: #424874;
 }
 
 /* Media Queries */

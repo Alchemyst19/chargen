@@ -27,7 +27,7 @@
             <button type="button" class="navbutton" id="onbutton" onclick="toggleNav(1)">>></button>
             <div id="navbar">
                 <button type="button" class="navbutton" id="offbutton" onclick="toggleNav(2)">&lt&lt</button>
-                <ul id="racenav"><a href=# onclick="showRace()">Races</a>
+                <ul id="racenav"><a href=# onclick="showRace()">Classes</a>
                     <li class="handbook"><a href="#" onclick="hideRace('Barbarian')">Barbarian</a></li>
                     <li class="handbook"><a href="#" onclick="hideRace('Bard')">Bard</a></li>
                     <li class="handbook"><a href="#" onclick="hideRace('Cleric')">Cleric</a></li>                    
@@ -41,185 +41,62 @@
                     <li class="handbook"><a href="#" onclick="hideRace('Wizard')">Wizard</a></li>
                 </ul>
             </div>
-            <div id="accordion"> <!-- Accordion is a JQUery setup. I understand approximately 2% of it, but it works. -->
+            <div id="accordion">
                 <div id="Barbarian" class="race handbook">
                     <h3>Barbarian</h3>
-                    <p>Shaped from stone by Moradin himself, the dwarves' knowledge of stone and metal is unmatched.</p>
-                    <p><b>Ability Score Increase: </b>Your Constitution increases by 2</p>
-                    <p><b>Age: </b>Dwarves mature at the same rate as humans, but live for about 350 years.</p>
-                    <p><b>Alignment: </b>Dwarves tend towards lawful and good alingments.</p>
-                    <p><b>Size: </b>Dwarves stand between 4 and 5 feet tall and average around 150 pounds. Your size is Medium.</p>
-                    <p><b>Speed: </b>Your base walking speed is 25 feet. Your speed is not reduced by wearing heavy armor.</p>
-                    <p><b>Languages: </b>You can speak, write and read Common and Dwarvish.</p>
-                    <p><b>Darkvision: </b>You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light.</p>
-                    <p><b>Dwarven Resilience: </b>You have advantage on saving throws against poison, and resistance against poison damage.</p>
-                    <p><b>Dwarven Combat Training: </b>You have proficiency with the battleaxe, handaxe, throwing hammer, and warhammer</p>
-                    <p><b>Tool Proficiency: </b>You gain proficiency with either smith's tools, brewer's supplies, or mason's tools.</p>
-                    <p><b>Stonecunning: </b>Whenever you make a History check related to stonework, you can add double your proficiency bonus to the check, instead of normal proficiency.</p>
-                    <p><b>Subraces: </b>You can choose between either Hill or Mountain Dwarf</p>
-                    <h4>Hill Dwarf</h4>
-                    <p><b>Ability Score Increase:</b> Your Wisdom score increases by 1</p>
-                    <p><b>Dwarven Toughness:</b> Your hit point maximum increases by 1, and it increases by 1 each time you gain a level.</p>
-                    <button type=submit>Continue as Hill Dwarf</button>
-                    <h4>Mountain Dwarf</h4>
-                    <p><b>Ability Score Increase:</b> Your Strength score increases by 1</p>
-                    <p><b>Dwarven Armor Training:</b> You have proficieny with light and medium armor</p>
-                    <button type=submit>Continue as Mountain Dwarf</button>
+                    <p>Fearsome warriors and berserkers, Barbarians trade armor for a brutal rage which increases their weapon damage and makes them resistant to most standard types of damage.</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'barbarian')">Continue as Barbarian</a>
                 </div>
-                <div id="Elf" class="race handbook">
-                    <h3>Elf</h3>
-                    <p>Elves utilize their longevity to master their specialty, whether it be natural or arcane.</p>
-                    <p><b>Ability Score Increase: </b>Your Dexterity score increases by 2</p>
-                    <p><b>Age: </b>An elf typically claims adulthood at age 100 and can live for 750 years</p>
-                    <p><b>Alignment: </b>Elves lean towards chaotic and good, although drow are typically evil</p>
-                    <p><b>Size: </b>Elves range from under 5 to over 6 feet tall, and have slender builds. Your size is Medium</p>
-                    <p><b>Speed: </b>Your base walking speed is 30 feet</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and Elvish</p>
-                    <p><b>Darkvision: </b>You can see in dim light within 60ft as if it were bright light, and darkness as if it were dim light.</p>
-                    <p><b>Keen Senses: </b>You have proficiency in the Perception skill.</p>
-                    <p><b>Fey Ancestry: </b>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
-                    <p><b>Trance: </b>Rather than sleep, elves meditate for 4 hours a day to get the benefits of a long rest.</p>
-                    <p><b>Subrace: </b>You can choose either the High, Wood, or Dark Elves</p>
-                    <h4>High Elves</h4>
-                    <p><b>Ability Score Increase: </b>Your Intelligence score increases by 1.</p>
-                    <p><b>Elf Weapon Training: </b>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
-                    <p><b>Cantrip: </b>You know one cantrip of your choice from the wizard spell list. Intelligecne is your spellcasting ability for it.</p>
-                    <p><b>Extra Language: </b>You can speak, read and write one extra language of your choice.</p>
-                    <button type=submit>Continue as High Elf</button>
-                    <h4>Wood Elf</h4>
-                    <p><b>Ability Score Increase: </b>Your Wisdom score increases by 1.</p>
-                    <p><b>Elf Weapon Training: </b>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
-                    <p><b>Fleet of Foot: </b>Your base walking speed increases to 35 feet.</p>
-                    <p><b>Mask of the Wild: </b>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
-                    <button type=submit>Continue as Wood Elf</button>
-                    <h4>Dark Elf</h4>
-                    <p><b>Ability Score Increase: </b>Your Charisma score increases by 1.</p>
-                    <p><b>Superior Darkvision: </b>Your darkvision has a radius of 120 feet.</p>
-                    <p><b>Sunlight Sensitivity: </b>You have disadvantage on attack rolls and Perception chekcs that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
-                    <p><b>Drow Magic: </b>You know the <i>dancing lights</i> cantrip. When you reach 3rd level, you can cast <i>faerie fire</i> once per day. When you reach 5th level, you can cast <i>darkness</i> once per day. Charisma is your spellcasting ability for these spells.</p>
-                    <p><b>Drow Weapon Training: </b>You have proficiency with rapiers, shortswords, and hand crossbows.</p>
-                    <button type=submit>Continue as Dark Elf</button>
+                <div id="Bard" class="race handbook">
+                    <h3>Bard</h3>
+                    <p>Bards utilize thier natural charisma, complemented by enchanting magic, to deceive, beguile and charm their opponents.</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'bard')">Continue as Bard</a>
                 </div>
-                <div id="Halfling" class="race  handbook">
-                    <h3>Halfling</h3>
-                    <p>Short and sweet, halflings utilize thier stature to charm others, typically for their own benefit.</p>
-                    <p><b>Ability Score Increase: </b>Your Dexterity score increases by 2.</p>
-                    <p><b>Age: </b>Halflings reach adulthood at age 20 and generally live more than two hundred years.</p>
-                    <p><b>Alignment: </b>Halflings tend towards good alignments, especially lawful good.</p>
-                    <p><b>Size: </b>Halflings average around 3 feet tall and weigh about 40 pounds. Your size is Small.</p>
-                    <p><b>Speed: </b>Your base walking speed is 25 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and Halfling.</p>
-                    <p><b>Lucky: </b>When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll.</p>
-                    <p><b>Brave: </b>You have advantage on saving throws against being frightened.</p>
-                    <p><b>Halfling Nimbleness: </b>You can move through the space of any creature that is of a size larger than yours.</p>
-                    <p><b>Subrace: </b>Choose between Lightfoot and Stout</p>
-                    <h4>Lightfoot Halfling</h4>
-                    <p><b>Ability Score Increase: </b>Your Charisma score increases by 1.</p>
-                    <p><b>Naturally Stealthy: </b>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than yours.</p>
-                    <button type=submit>Continue as Lightfoot Halfling</button>
-                    <h4>Stout Halfling</h4>
-                    <p><b>Ability Score Increase: </b>Your Constitution score increases by 1.</p>
-                    <p><b>Stout Resilience: </b>You have advantage on saving throws against poison, and you have resistance to poison damage.</p>
-                    <button type=submit>Continue as Stout Halfling</button>
+                <div id="Cleric" class="race handbook">
+                        <h3>Cleric</h3>
+                        <p>Clerics call upon divine forces to bolster their allies and hamper their enemies.</p>
+                        <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'cleric')">Continue as Cleric</a>
                 </div>
-                <div id="Human" class="race handbook">
-                    <h3>Human</h3>
-                    <p>Humans are the most adaptable and ambitious people among the common races. They live fully in the present - making them well-suited to adventuring life - but also plan for the future, striving to leave a lasting legacy. Individually and as a group, humans are adaptable opportunists, and they stay alert to changing social and political dynamics.</p>
-                    <p><b>Ability Score Increase: </b>Your ability scores each increase by 1.</p>
-                    <p><b>Age: </b>Humans reach adulthood in their late teens and live less than a century.</p>
-                    <p><b>Alignment: </b>Humans tend towards no particular alignment.</p>
-                    <p><b>Size: </b>Humans vary in height from barely 5 feet to well over 6 feet tall. Your size is Medium.</p>
-                    <p><b>Speed: </b>Your base walking speed is 30 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and one extra language of your choice.</p>
-                    <button type=submit>Continue as Human</button>
-                    <h4>Variant Human</h4>
-                    <p>You may choose to take this variant instead, trading your Ability Score Increase from the base human with the following.</p>
-                    <p><b>Ability Score Increase: </b>Two different ability scores of your choice each increase by 1.</p>
-                    <p><b>Skills: </b>You gain proficiency in one skill of your choice.</p>
-                    <p><b>Feat: </b>You gain one feat of your choice.</p>
-                    <button type=submit>Continue as Variant Human</button>        
+                <div id="Druid" class="race handbook">
+                        <h3>Druid</h3>
+                        <p>Druids embody the forces of nature, changing their form to that of increasingly powerful beasts.</p>
+                        <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'druid')">Continue as Druid</a>
                 </div>
-                <div id="Dragonborn" class="race handbook">
-                    <h3>Dragonborn</h3>
-                    <p>Scaled and proud, dragonborn call upon their draconic ancestry to unleash elemental powers upon thier foes.</p>
-                    <p><b>Ability Score Increase: </b>Your Strength score increases by 2, and your Charisma score increases by 1.</p>
-                    <p><b>Age: </b>Dragonborn reach adulthood by 15 and live to be around 80.</p>
-                    <p><b>Alignment: </b>Dragonborn lean towards either good or evil.</p>
-                    <p><b>Size: </b>Dragonborn are well over 6 feet tall and weigh almost 250 pounds. Your size is Medium.</p>
-                    <p><b>Speed: </b>Your base walking speed is 30 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and Draconic.</p>
-                    <p><b>Draconic Ancestry: </b>Choose one type of dragon. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table in the Player's Handbook.</p>
-                    <p><b>Breath Weapon: </b>You can use your action to exhale destructive energy, as determined by your Draconic Ancestry. Creatures in the area must make a saving throw, the DC for which is (8 + your CON + your proficiency bonus). Creatures take 2d6 damage on a failed save, or half as much on a successful one. The damage increases as you gain levels.</p>
-                    <p><b>Damage Resistance: </b>You have resistance to the damage type associated with your Draconic Ancestry.</p>
-                    <button type=submit>Continue as Dragonborn</button>
+                <div id="Fighter" class="race handbook">
+                    <h3>Fighter</h3>
+                    <p>Fighters are masters of combat in all its varied forms, and use that expertise to outthink and outmaneuver thier foes.</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'fighter')">Continue as Fighter</a>
                 </div>
-                <div id="Gnome" class="race  handbook">
-                    <h3>Gnome</h3>
-                    <p>Tinkerers, animal trainers, and tricksters, gnomes are as well-known for their pranks as they are their amazing inventions</p>
-                    <p><b>Ability Score Increase: </b>Your Intelligence score increases by 2.</p>
-                    <p><b>Age: </b>Gnomes typically settle down around age 40 and live between 350 and 500 years.</p>
-                    <p><b>Alignment: </b>Gnomes tend towards good alignments.</p>
-                    <p><b>Size: </b>Gnomes are between 3 and 4 feet tall and average 40 pounds. Your size is Small.</p>
-                    <p><b>Speed: </b>Your base walking speed is 25 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and Gnomish.</p>
-                    <p><b>Darkvision: </b>You can see in dim light within 60 feet as if it were bright light, and in darkness as if it were dim light.</p>
-                    <p><b>Gnome Cunning: </b>You have advantage on all Intelligence, Wisdom and Charisma saving throws against magic.</p>
-                    <p><b>Subrace: </b>Choose between Forest or Rock Gnome</p>
-                    <h4>Forest Gnome</h4>
-                    <p><b>Ability Score Increase: </b>Your Dexterity score increases by 1.</p>
-                    <p><b>Natural Illusionist: </b>You know the <i>minor illusion</i> cantrip. Intelligence is your spellcasting ability for it.</p>
-                    <p><b>Speak with Small Beasts: </b>You can communicate simple ideas to Small or smaller beasts.</p>
-                    <button type=submit>Continue as Forest Gnome</button>
-                    <h4>Rock Gnome</h4>
-                    <p><b>Ability Score Increase: </b>Your Constitution score increases by 1.</p>
-                    <p><b>Artificer's Lore: </b>You add twice your proficiency bonus to History checks related to magic items, alchemical objects, or technological devices.</p>
-                    <p><b>Tinker: </b>You have proficiency with tinker's tools. Using those tools, you can spend 1 hour and 10gp of materials to construct a Tiny clockwork device, from the options listed in the Player's Handbook. The object stops functioning after 24 hours unless you spend 1 hour repairing it, or when you use your action to dismantle it; at that time, you can retain the materials used to create it. You can have up to 3 devices active at a time.</p>
-                    <button type=submit>Continue as Rock Gnome</button>
+                <div id="Paladin" class="race handbook">
+                    <h3>Paladin</h3>
+                    <p>Paladins are the hands of their deities in the world, protecting innocents and destroying evil (or vice versa).</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'paladin')">Continue as Paladin</a>
                 </div>
-                <div id="Half-Elf" class="race  handbook">
-                    <h3>Half-Elf</h3>
-                    <p>Descended from both humans and elves, half-elves live between two worlds, never quite fitting into either.</p>
-                    <p><b>Ability Score Increase: </b>Your Charisma score increases by 2, and two other ability scores of your choice increase by 1.</p>
-                    <p><b>Age: </b>Half-elves reach maturity at age 20, and live for more than 150 years.</p>
-                    <p><b>Alignment: </b>Half-elves tend towards chaotic alignments.</p>
-                    <p><b>Size: </b>Half-elves range from 5 to 6 feet tall. Your size is Medium.</p>
-                    <p><b>Speed: </b>Your base walking speed is 30 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common, Elvish, and one extra language of your choice.</p>
-                    <p><b>Darkvision: </b>You can see in dim light up to 60 feet as if it were bright light, and darkness as if it were dim light.</p>
-                    <p><b>Fey Ancestry: </b>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
-                    <p><b>Skill Versatility: </b>You gain proficiency in two skills of your choice.</p>
-                    <button type=submit>Continue as Half-Elf</button>
+                <div id="Ranger" class="race handbook">
+                    <h3>Ranger</h3>
+                    <p>Survivalists at heart, rangers are the woodsmen and guides of the Forgotten Realms, capable of guarding their party against both foes and forces of nature.</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'ranger')">Continue as Ranger</a>
                 </div>
-                <div id="Half-Orc" class="race handbook">
-                    <h3>Half-Orc</h3>
-                    <p>Combining the best traits of humans and orcs, Half-Orcs are worthy competitors, both on and off the battlefield.</p>
-                    <p><b>Ability Score Increase: </b>Your Strength score increases by 2, and your Constitution score increases by 1.</p>
-                    <p><b>Age: </b>Half-orcs reach maturity at age 14 and live less than 75 years.</p>
-                    <p><b>Alignment: </b>Half-orcs tend towards chaotic and good alignments.</p>
-                    <p><b>Size: </b>Half-orcs are betweeen 5 and 7 feet tall. Your size is Medium.</p>
-                    <p><b>Speed: </b>Your base walking speed is 30 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and Orc.</p>
-                    <p><b>Darkvision: </b>You can see in dim light up to 60 feet as if it were bright light, and in darkness as if it were dim light.</p>
-                    <p><b>Menacing: </b>You gain proficiency in Intimidation.</p>
-                    <p><b>Relentless Endurance: </b>When you are reduced to 0 hit points but not killed outright, you instead drop to 1 hit point. You can't use this feature again until you finish a long rest.</p>
-                    <p><b>Savage Attacks: </b>When you score a critical hit with a weapon attack, you can roll one of the weapon's daamge dice one additional time and add it to the total damage of the critical hit.</p>
-                    <button type=submit>Continue as Half-Orc</button>
+                <div id="Rogue" class="race handbook">
+                    <h3>Rogue</h3>
+                    <p>Rogues are the tricksters, assassins and theives of the Forgotten Realms, using stealth and misdirection to eliminate their enemies.</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'rogue')">Continue as Rogue</a>
                 </div>
-                <div id="Tiefling" class="race handbook">
-                    <h3>Tiefling</h3>
-                    <p>The product of an ancient deal with demons, tieflings can summon hellfire to burn attackers.</p>
-                    <p><b>Ability Score Increase: </b>Your Intelligence score increases by 1, and your Charisma score increases by 2.</p>
-                    <p><b>Age: </b>Tieflings mature at the same rate as humans, but live a few years longer.</p>
-                    <p><b>Alignment: </b>Tieflings tend towards chaotic alignemnts.</p>
-                    <p><b>Size: </b>Tieflings are about the same size as humans. Your size is Medium.</p>
-                    <p><b>Speed: </b>Your base walking speed is 30 feet.</p>
-                    <p><b>Languages: </b>You can speak, read and write Common and Infernal/</p>
-                    <p><b>Darkvision: </b>You can see in dim light up to 60 feet as if it were bright light, and in darkness as if it were dim light.</p>
-                    <p><b>Hellish Resistance: </b>You have resistance to fire damage.</p>
-                    <p><b>Infernal Legacy: </b>You know the <i>thaumaturgy</i> cantrip. Once you reach 3rd level, you can cast <i>hellish rebuke</i> once per day as a 2nd-level spell. Once you reach 5th level, you can also cast <i>darkness</i> once per day. Charisma is your spellcasting ability for these spells.</p>
-                    <button type=submit>Continue as Tiefling</button>
+                <div id="Sorceror" class="race handbook">
+                    <h3>Sorceror</h3>
+                    <p>Born of magical beings, sorcerors draw on innate arcane abilities to cast spells.</p>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'sorceror')">Continue as Sorceror</a>
                 </div>
-
+                <div id="Warlock" class="race handbook">
+                        <h3>Warlock</h3>
+                        <p>Servants of otherworldly beings, warlocks are granted arcane power in exchange for loyalty and obedience</p>
+                        <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'warlock')">Continue as Warlock</a>
+                    </div>
+                    <div id="Wizard" class="race handbook">
+                        <h3>Wizard</h3>
+                        <p>Wizards devote their lives to the study of the arcane, and use that gained knowledge to manipulate the flow of magic in the world.</p>
+                        <a href="chargeneratorclass.html" class="button" onclick="setProp('class', 'wizard')">Continue as Wizard</a>
+                    </div>
             </div>
         </div>
         <footer>

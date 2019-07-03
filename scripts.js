@@ -1,3 +1,10 @@
+myStorage = window.localStorage;
+
+function setProp(property, setval) {
+    localStorage.setItem(property, setval);
+    console.log(localStorage.getItem(property));
+}
+
 function hideRace (clickRace) {
     var x = document.getElementsByClassName("race");
     for (let z=0; z<x.length; z++){

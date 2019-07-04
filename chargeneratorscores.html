@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>5eCG Generator</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header id="top" class="main-header">
+            <h1><a href="chargenhome.html">5e Character Generator</a></h1>
+            <nav class="main-nav">
+                    <a href="chargenerator.html">Generator</a>
+                    <a href="chargenrandom.html">Randomizer</a>
+                    <a href="chargen.html">About</a>
+            </nav>
+        </header>
+        <div id="disclaimer">
+            <p>5eCG currently only supports Player's Handbook content. Other races, subclasses, spells and more coming soon!</p>
+        </div>
+        <div class="wrapper" id="genwrapper">
+            <div id="scoredescriptions">
+                <h2>Score Descriptions</h2>
+                <p><b>Strength: </b>Your character's physical prowess and athleticism.</p>
+                <p><b>Dexterity: </b>Your character's hand-eye coordination and finesse, tied to acrobatics, evasion, and initiative.</p>
+                <p><b>Constitution: </b>Your character's fortitude, affecting your HP and physical saves.</p>
+                <p><b>Intelligence: </b>Your character's mental capacity for information and learning, tied to "knowledge" skills and to investigation.</p>
+                <p><b>Wisdom: </b>Your character's willpower, affecting your insight and saves against harmful spells.</p>
+                <p><b>Charisma: </b>Your character's social aptitude, affecting skills such as Persuasion and Deception.</p>
+            </div>
+            <div id="asiassign">
+                <button type='button' onclick='genScore()'>Generate Scores</button>
+            </div>
+        </div>
+        <footer>
+            <a href="https://github.com/Alchemyst19/chargen"><img src="img/iconfinder_mark-github_298822.png" alt="Github" height="36" width="36"></a>
+        </footer>
+    </body>
+</html>

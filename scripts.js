@@ -5,6 +5,15 @@ function setProp(property, setval) {
     console.log(localStorage.getItem(property));
 }
 
+function genScore() {
+    var x = [];
+    for(let q=0; q<4; q++){
+        x.push(Math.floor((Math.random()*6)+1+));
+    }
+    var y = Math.min(x[0], x[1]. x[2]. x[3]);
+    console.log(x);
+}
+
 function hideRace (clickRace) {
     var x = document.getElementsByClassName("race");
     for (let z=0; z<x.length; z++){

@@ -29,7 +29,7 @@ h1 {
     flex: 1;
 }
 
-li {
+.racenav li {
     text-decoration: none;
     border: 1px rgb(114, 110, 110) solid;
 }
@@ -100,6 +100,44 @@ nav a {
     align-self: flex-start;
     top: 0;
     border-bottom: 5px solid black;
+}
+
+#asiassign {
+    border-top: 5px black solid;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#asiassign button {
+    width: 100px;
+    align-self: center;
+}
+
+.asilist {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+
+.asilist li{
+    flex: 0;
+    border: 1px black solid;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    min-height: 30px;
+    min-width: 30px;
+    text-align: center;
+}
+
+.asi{
+}
+
+.asi li{
+    list-style-type: none;
+    border: 1px solid #424874
 }
 
 #disclaimer {

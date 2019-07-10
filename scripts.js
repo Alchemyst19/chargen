@@ -1,4 +1,5 @@
 myStorage = window.localStorage;
+var z = [];
 
 function setProp(property, setval) {
     localStorage.setItem(property, setval);
@@ -6,12 +7,16 @@ function setProp(property, setval) {
 }
 
 function genScore() {
-    var x = [];
-    for(let q=0; q<4; q++){
-        x.push(Math.floor((Math.random()*6)+1+));
+    for(let r=0; r<6; r++){
+        var x = [];
+        for(let q=0; q<4; q++){
+            x.push(Math.floor((Math.random()*6)+1));
+        }
+        var y = Math.min(x[0], x[1], x[2], x[3]);
+        z[r] = (x[0]+x[1]+x[2]+x[3]-y);
+        $('.asilist').append('<li>'+z[r]+'</li>');
+        console.log(z[r]);
     }
-    var y = Math.min(x[0], x[1]. x[2]. x[3]);
-    console.log(x);
 }
 
 function hideRace (clickRace) {

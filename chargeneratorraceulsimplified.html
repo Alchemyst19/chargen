@@ -58,11 +58,11 @@
                     <h4>Hill Dwarf</h4>
                     <p><b>Ability Score Increase:</b> Your Wisdom score increases by 1</p>
                     <p><b>Dwarven Toughness:</b> Your hit point maximum increases by 1, and it increases by 1 each time you gain a level.</p>
-                    <a href="chargeneratorscores.html" class="button" onclick="('prace', 'hilldwarf')">Continue as Hill Dwarf</a>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'hilldwarf')">Continue as Hill Dwarf</a>
                     <h4>Mountain Dwarf</h4>
                     <p><b>Ability Score Increase:</b> Your Strength score increases by 1</p>
                     <p><b>Dwarven Armor Training:</b> You have proficieny with light and medium armor</p>
-                    <a href="chargeneratorscores.html" class="button" onclick="('race', 'mountdwarf')">Continue as Mountain Dwarf</a>
+                    <a href="chargeneratorclass.html" class="button" onclick="setPropsetProp('race', 'mountdwarf')">Continue as Mountain Dwarf</a>
                 </div>
                 <div id="Elf" class="race handbook">
                     <h3>Elf</h3>
@@ -83,20 +83,20 @@
                     <p><b>Elf Weapon Training: </b>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
                     <p><b>Cantrip: </b>You know one cantrip of your choice from the wizard spell list. Intelligecne is your spellcasting ability for it.</p>
                     <p><b>Extra Language: </b>You can speak, read and write one extra language of your choice.</p>
-                    <a href="chargeneratorscores.html" class="button" onclick="('race', 'highelf')">Continue as High Elf</a>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'highelf')">Continue as High Elf</a>
                     <h4>Wood Elf</h4>
                     <p><b>Ability Score Increase: </b>Your Wisdom score increases by 1.</p>
                     <p><b>Elf Weapon Training: </b>You have proficiency with the longsword, shortsword, shortbow, and longbow.</p>
                     <p><b>Fleet of Foot: </b>Your base walking speed increases to 35 feet.</p>
                     <p><b>Mask of the Wild: </b>You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena.</p>
-                    <a href="chargeneratorscores.html" class="button" onclick="('race', 'woodelf')">Continue as Wood Elf</a>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'woodelf')">Continue as Wood Elf</a>
                     <h4>Dark Elf</h4>
                     <p><b>Ability Score Increase: </b>Your Charisma score increases by 1.</p>
                     <p><b>Superior Darkvision: </b>Your darkvision has a radius of 120 feet.</p>
                     <p><b>Sunlight Sensitivity: </b>You have disadvantage on attack rolls and Perception chekcs that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
                     <p><b>Drow Magic: </b>You know the <i>dancing lights</i> cantrip. When you reach 3rd level, you can cast <i>faerie fire</i> once per day. When you reach 5th level, you can cast <i>darkness</i> once per day. Charisma is your spellcasting ability for these spells.</p>
                     <p><b>Drow Weapon Training: </b>You have proficiency with rapiers, shortswords, and hand crossbows.</p>
-                    <a href="chargeneratorscores.html" class="button" onclick="('race', 'drow')">Continue as Dark Elf</a>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'drow')">Continue as Dark Elf</a>
                 </div>
                 <div id="Halfling" class="race  handbook">
                     <h3>Halfling</h3>
@@ -114,11 +114,11 @@
                     <h4>Lightfoot Halfling</h4>
                     <p><b>Ability Score Increase: </b>Your Charisma score increases by 1.</p>
                     <p><b>Naturally Stealthy: </b>You can attempt to hide even when you are obscured only by a creature that is at least one size larger than yours.</p>
-                    <button type=submit>Continue as Lightfoot Halfling</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'lightfoot')">Continue as Lightfoot Halfling</a>
                     <h4>Stout Halfling</h4>
                     <p><b>Ability Score Increase: </b>Your Constitution score increases by 1.</p>
                     <p><b>Stout Resilience: </b>You have advantage on saving throws against poison, and you have resistance to poison damage.</p>
-                    <button type=submit>Continue as Stout Halfling</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'stout')">Continue as Stout Halfling</a>
                 </div>
                 <div id="Human" class="race handbook">
                     <h3>Human</h3>
@@ -129,13 +129,13 @@
                     <p><b>Size: </b>Humans vary in height from barely 5 feet to well over 6 feet tall. Your size is Medium.</p>
                     <p><b>Speed: </b>Your base walking speed is 30 feet.</p>
                     <p><b>Languages: </b>You can speak, read and write Common and one extra language of your choice.</p>
-                    <button type=submit>Continue as Human</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'human')">Continue as Human</a>
                     <h4>Variant Human</h4>
                     <p>You may choose to take this variant instead, trading your Ability Score Increase from the base human with the following.</p>
                     <p><b>Ability Score Increase: </b>Two different ability scores of your choice each increase by 1.</p>
                     <p><b>Skills: </b>You gain proficiency in one skill of your choice.</p>
                     <p><b>Feat: </b>You gain one feat of your choice.</p>
-                    <button type=submit>Continue as Variant Human</button>        
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'variant')">Continue as Variant Human</a>        
                 </div>
                 <div id="Dragonborn" class="race handbook">
                     <h3>Dragonborn</h3>
@@ -149,7 +149,7 @@
                     <p><b>Draconic Ancestry: </b>Choose one type of dragon. Your breath weapon and damage resistance are determined by the dragon type, as shown in the table in the Player's Handbook.</p>
                     <p><b>Breath Weapon: </b>You can use your action to exhale destructive energy, as determined by your Draconic Ancestry. Creatures in the area must make a saving throw, the DC for which is (8 + your CON + your proficiency bonus). Creatures take 2d6 damage on a failed save, or half as much on a successful one. The damage increases as you gain levels.</p>
                     <p><b>Damage Resistance: </b>You have resistance to the damage type associated with your Draconic Ancestry.</p>
-                    <button type=submit>Continue as Dragonborn</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'dragonborn')">Continue as Dragonborn</a>
                 </div>
                 <div id="Gnome" class="race  handbook">
                     <h3>Gnome</h3>
@@ -167,12 +167,12 @@
                     <p><b>Ability Score Increase: </b>Your Dexterity score increases by 1.</p>
                     <p><b>Natural Illusionist: </b>You know the <i>minor illusion</i> cantrip. Intelligence is your spellcasting ability for it.</p>
                     <p><b>Speak with Small Beasts: </b>You can communicate simple ideas to Small or smaller beasts.</p>
-                    <button type=submit>Continue as Forest Gnome</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'forest')">Continue as Forest Gnome</a>
                     <h4>Rock Gnome</h4>
                     <p><b>Ability Score Increase: </b>Your Constitution score increases by 1.</p>
                     <p><b>Artificer's Lore: </b>You add twice your proficiency bonus to History checks related to magic items, alchemical objects, or technological devices.</p>
                     <p><b>Tinker: </b>You have proficiency with tinker's tools. Using those tools, you can spend 1 hour and 10gp of materials to construct a Tiny clockwork device, from the options listed in the Player's Handbook. The object stops functioning after 24 hours unless you spend 1 hour repairing it, or when you use your action to dismantle it; at that time, you can retain the materials used to create it. You can have up to 3 devices active at a time.</p>
-                    <button type=submit>Continue as Rock Gnome</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'rock')">Continue as Rock Gnome</a>
                 </div>
                 <div id="Half-Elf" class="race  handbook">
                     <h3>Half-Elf</h3>
@@ -186,7 +186,7 @@
                     <p><b>Darkvision: </b>You can see in dim light up to 60 feet as if it were bright light, and darkness as if it were dim light.</p>
                     <p><b>Fey Ancestry: </b>You have advantage on saving throws against being charmed, and magic can't put you to sleep.</p>
                     <p><b>Skill Versatility: </b>You gain proficiency in two skills of your choice.</p>
-                    <button type=submit>Continue as Half-Elf</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'halfelf')">Continue as Half-Elf</a>
                 </div>
                 <div id="Half-Orc" class="race handbook">
                     <h3>Half-Orc</h3>
@@ -201,7 +201,7 @@
                     <p><b>Menacing: </b>You gain proficiency in Intimidation.</p>
                     <p><b>Relentless Endurance: </b>When you are reduced to 0 hit points but not killed outright, you instead drop to 1 hit point. You can't use this feature again until you finish a long rest.</p>
                     <p><b>Savage Attacks: </b>When you score a critical hit with a weapon attack, you can roll one of the weapon's daamge dice one additional time and add it to the total damage of the critical hit.</p>
-                    <button type=submit>Continue as Half-Orc</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'halforc')">Continue as Half-Orc</a>
                 </div>
                 <div id="Tiefling" class="race handbook">
                     <h3>Tiefling</h3>
@@ -215,7 +215,7 @@
                     <p><b>Darkvision: </b>You can see in dim light up to 60 feet as if it were bright light, and in darkness as if it were dim light.</p>
                     <p><b>Hellish Resistance: </b>You have resistance to fire damage.</p>
                     <p><b>Infernal Legacy: </b>You know the <i>thaumaturgy</i> cantrip. Once you reach 3rd level, you can cast <i>hellish rebuke</i> once per day as a 2nd-level spell. Once you reach 5th level, you can also cast <i>darkness</i> once per day. Charisma is your spellcasting ability for these spells.</p>
-                    <button type=submit>Continue as Tiefling</button>
+                    <a href="chargeneratorclass.html" class="button" onclick="setProp('race', 'tiefling')">Continue as Tiefling</a>
                 </div>
 
             </div>

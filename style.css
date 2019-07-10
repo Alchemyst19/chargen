@@ -132,12 +132,30 @@ nav a {
     text-align: center;
 }
 
-.asi{
+.asi {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-around;
 }
 
-.asi li{
+#asiinputs input {
+    width: 30px;
+}
+
+#asinames {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+#asinames li{
     list-style-type: none;
-    border: 1px solid #424874
+}
+
+.asi div{
+    text-align: justify;
+}
+
+.asi p {
+    display: block;
 }
 
 #disclaimer {

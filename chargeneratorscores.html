@@ -36,13 +36,26 @@
                 <button type='button' onclick='genScore()'>Generate Scores</button>
                 <ul class="asilist">
                 </ul>
-                <ul class="asi">
-                    <li></li>
-                    <li>Dexterity: </li>
-                    <li>Constitution: </li>
-                    <li>Intelligence: </li>
-                    <li>Wisdom: </li>
-                    <li>Charisma: </li>
+                <p>Assign scores below. Use each score exactly once.</p>
+                <div class="asi">
+                    <ul id='asinames'>
+                        <li>Strength:</li>
+                        <li>Dexterity:</li>
+                        <li>Constitution:</li>
+                        <li>Intelligence:</li>
+                        <li>Wisdom:</li>
+                        <li>Charisma:</li>
+                    </ul>
+                    <form id='asiinputs'>
+                        <input type='text' name='Strength' id='STR'><br>
+                        <input type='text' name='Dexterity'id='DEX'><br>
+                        <input type='text' name='Constitution' id='CON'><br>
+                        <input type='text' name='Intelligence' id='INT'><br>
+                        <input type='text' name='Wisdom' id='WIS'><br>
+                        <input type='text' name='Charisma' id='CHA'><br>
+                    </form>
+                </div>
+                <button type="button" onclick='setASI()'>Assign Scores</button>>
                 </ul>
             </div>
         </div>

@@ -1,12 +1,22 @@
 myStorage = window.localStorage;
-var z = [];
 
 function setProp(property, setval) {
     localStorage.setItem(property, setval);
     console.log(localStorage.getItem(property));
 }
 
+function setASI() {
+    setProp('STR', document.getElementById('STR').value);
+    setProp('DEX', document.getElementById('DEX').value);
+    setProp('CON', document.getElementById('CON').value);
+    setProp('INT', document.getElementById('INT').value);
+    setProp('WIS', document.getElementById('WIS').value);
+    setProp('CHA', document.getElementById('CHA').value);
+}
+
 function genScore() {
+    $('.asilist').html('');
+    var z = [];
     for(let r=0; r<6; r++){
         var x = [];
         for(let q=0; q<4; q++){

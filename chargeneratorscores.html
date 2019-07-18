@@ -10,7 +10,7 @@
         <script src="scripts.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
-    <body>
+    <body onload="raceScore()">
         <header id="top" class="main-header">
             <h1><a href="chargenhome.html">5e Character Generator</a></h1>
             <nav class="main-nav">
@@ -36,7 +36,7 @@
                 <button type='button' onclick='genScore()'>Generate Scores</button>
                 <ul class="asilist">
                 </ul>
-                <p>Assign scores below. Use each score exactly once.</p>
+                <p>Assign scores below. Use each score exactly once. Race modifiers (shown in the boxes) are added upon submission, so there's no need to account for them.</p>
                 <div class="asi">
                     <ul id='asinames'>
                         <li>Strength:</li>
@@ -45,6 +45,21 @@
                         <li>Intelligence:</li>
                         <li>Wisdom:</li>
                         <li>Charisma:</li>
+                    </ul>
+                    <form id='elfasi'>
+                            <input type="checkbox" name="strrace" onclick='(toggleASI("STR"))'><br>
+                            <input type="checkbox" name="dexrace" onclick='(toggleASI("DEX"))'><br>
+                            <input type="checkbox" name="conrace" onclick='(toggleASI("CON"))'><br>
+                            <input type="checkbox" name="intrace" onclick='(toggleASI("INT"))'><br>
+                            <input type="checkbox" name="wisrace" onclick='(toggleASI("WIS"))'><br>
+                    </form>
+                    <ul id='raceasi'>
+                        <li id='strrace'></li>
+                        <li id='dexrace'></li>
+                        <li id='conrace'></id>
+                        <li id='intrace'></li>
+                        <li id='wisrace'></li>
+                        <li id='charace'></li>
                     </ul>
                     <form id='asiinputs'>
                         <input type='text' name='Strength' id='STR'><br>
@@ -55,7 +70,7 @@
                         <input type='text' name='Charisma' id='CHA'><br>
                     </form>
                 </div>
-                <button type="button" onclick='setASI()'>Assign Scores</button>>
+                <button type="button" onclick='setASI()'>Assign Scores</button>
                 </ul>
             </div>
         </div>

@@ -115,7 +115,7 @@ nav a {
     align-self: center;
 }
 
-.asilist {
+.asilist{
     display: flex;
     justify-content: center;
     padding-inline-start: 0px;
@@ -132,20 +132,36 @@ nav a {
     text-align: center;
 }
 
+#raceasi li{
+    border: 1px black solid;
+    list-style-type: none;
+    text-align: center;
+    height: 20px;
+    width: 30px;
+}
+
 .asi {
     display: flex;
     padding-bottom: 10px;
     justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+#elfasi{
+    display: none;
 }
 
 #asiinputs input {
     width: 30px;
 }
 
-#asinames {
+#asinames,
+#raceasi {
     margin-block-start: 0px;
     margin-block-end: 0px;
+    width: 30px;
 }
+
 #asinames li{
     list-style-type: none;
 }

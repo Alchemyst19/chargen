@@ -6,12 +6,98 @@ function setProp(property, setval) {
 }
 
 function setASI() {
-    setProp('STR', document.getElementById('STR').value);
-    setProp('DEX', document.getElementById('DEX').value);
-    setProp('CON', document.getElementById('CON').value);
-    setProp('INT', document.getElementById('INT').value);
-    setProp('WIS', document.getElementById('WIS').value);
-    setProp('CHA', document.getElementById('CHA').value);
+    setProp('STR', (document.getElementById('STR').value)+document.getElementById('strrace').innerHTML);
+    setProp('DEX', (document.getElementById('DEX').value)+document.getElementById('dexrace').value);
+    setProp('CON', (document.getElementById('CON').value)+document.getElementById('conrace').value);
+    setProp('INT', (document.getElementById('INT').value)+document.getElementById('intrace').value);
+    setProp('WIS', (document.getElementById('WIS').value)+document.getElementById('wisrace').value);
+    setProp('CHA', (document.getElementById('CHA').value)+document.getElementById('charace').value);
+}
+
+function raceScore() {
+    var z = localStorage.getItem('race');
+    if(z === 'hilldwarf'){
+        $('#conrace').html('2');
+        $('#wisrace').html('1');
+    }else if(z === 'mountdwarf'){
+        $('#conrace').html('2');
+        $('#strrace').html('1');
+    }else if(z === 'woodelf'){
+        $('#dexrace').html('2');
+        $('#wisrace').html('1');
+    }else if(z === 'highelf'){
+        $('#dexrace').html('2');
+        $('#intrace').html('1');
+    }else if(z === 'drow'){
+        $('#dexrace').html('2');
+        $('#charace').html('1');
+    }else if(z === 'lightfoot'){
+        $('#dexrace').html('2');
+        $('#charace').html('1');
+    }else if(z === 'stout'){
+        $('#dexrace').html('2');
+        $('#conrace').html('1');
+    }else if(z === 'human'){
+        $('#strrace').html('1');
+        $('#dexrace').html('1');
+        $('#conrace').html('1');
+        $('#intrace').html('1');
+        $('#wisrace').html('1');
+        $('#charace').html('1');
+    }else if(z === 'dragonborn'){
+        $('#strrace').html('2');
+        $('#charace').html('1');
+    }else if(z === 'forest'){
+        $('#intrace').html('2');
+        $('#dexrace').html('1');
+    }else if(z === 'rock'){
+        $('#intrace').html('2');
+        $('#conrace').html('1');
+    }else if(z === 'halfelf'){
+        $('.asi').before('<p>Half-Elves can choose 2 scores to increase by 1, in additon to increasing their Charisma by 2. Check the boxes of the scores you want increased (2 boxes total)');
+        $('#elfasi').show();
+        $('#charace').html('2');
+    }else if(z === 'halforc'){
+        $('#strrace').html('2');
+        $('#conrace').html('1');
+    }else if(z === 'tiefling'){
+        $('#charace').html('2');
+        $('#intrace').html('1');
+    }
+}
+
+function toggleASI(score){
+    if(score === 'STR'){
+        if(document.getElementById('strrace').innerHTML === '1'){
+            $('#strrace').html('');
+        }else{
+            $('#strrace').html('1');
+        }
+    }else if(score === 'DEX'){
+        if(document.getElementById('dexrace').innerHTML === '1'){
+            $('#dexrace').html('');
+        }else{
+            $('#dexrace').html('1');
+        }
+    }else if(score === 'CON'){
+        if(document.getElementById('conrace').innerHTML === '1'){
+            $('#conrace').html('');
+        }else{
+            $('#conrace').html('1');
+        }
+    }else if(score === 'INT'){
+        if(document.getElementById('intrace').innerHTML === '1'){
+            $('#intrace').html('');
+        }else{
+            $('#intrace').html('1');
+        }
+    }else if(score === 'WIS'){
+        if(document.getElementById('wisrace').innerHTML === '1'){
+            $('#wisrace').html(' ');
+        }else{
+            $('#wisrace').html('1');
+        }
+    }
 }
 
 function genScore() {

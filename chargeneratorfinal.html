@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>5eCG Generator</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header id="top" class="main-header">
+            <h1><a href="chargenhome.html">5e Character Generator</a></h1>
+            <nav class="main-nav">
+                    <a href="chargenerator.html">Generator</a>
+                    <a href="chargenrandom.html">Randomizer</a>
+                    <a href="chargen.html">About</a>
+            </nav>
+        </header>
+
+
+<!-- <script>get("strrace")</script> -->
+
+        <div id="disclaimer">
+            <p>5eCG currently only supports Player's Handbook content. Other races, subclasses, spells and more coming soon!</p>
+        </div>
+        <button type="button" onclick="showCharacter()">Show Character</button>
+        <div id="giftwrapper">
+            <input type="text" name="Name" id="charname"><br>
+            <p id='finrace'><b>Race:</b> </p>
+            <p id='finclass'><b>Class:</b> </p>
+            <ul id='finscores'>
+                <li id='finstr'><b>Strength:</b> </li>
+                <li id='findex'><b>Dexterity:</b> </li>
+                <li id='fincon'><b>Constitution:</b> </li>
+                <li id='finint'><b>Intelligence:</b> </li>
+                <li id='finwis'><b>Wisdom:</b> </li>
+                <li id='fincha'><b>Charisma:</b> </li>
+            </ul>
+        </div>
+        <footer>
+            <a href="https://github.com/Alchemyst19/chargen"><img src="img/iconfinder_mark-github_298822.png" alt="Github" height="36" width="36"></a>
+        </footer>
+    </body>
+</html>

@@ -183,7 +183,8 @@ nav a {
     text-align: center;
 }
 
-#wrapper {
+#wrapper,
+.wrapper {
     display: flex;
     flex: 1;
     margin: 0 auto;
@@ -239,7 +240,13 @@ a.hover {
     top: 100px;
 }
 
-#navbar {
+#onbuttongift,
+#giftbar {
+    align-self: right;
+}
+
+#navbar,
+#giftbar {
     background-color: #346660;
     color: #DCD6F7;
     display: none;
@@ -250,7 +257,8 @@ a.hover {
     padding-right: 10px;
 }
 
-#offbutton {
+#offbuttonnav,
+#offbuttongift {
     display: none;
     position: sticky;
     align-self: flex-start;
@@ -273,6 +281,10 @@ a.hover {
     align-self: center;
 }
 
+#genwrapper {
+    flex-direction: column
+}
+
 .button {
     font: bold Arial;
     text-decoration: none;
@@ -283,6 +295,13 @@ a.hover {
     border-right: 1px solid #333333;
     border-bottom: 1px solid #333333;
     border-left: 1px solid #CCCCCC;
+}
+
+#beginbutton {
+    width: 100px;
+    align-self: center;
+    margin: 20px;
+    text-align: center;
 }
 
 /* Scrollbar Customizations */
@@ -341,7 +360,8 @@ a.hover {
         top: 70px;
     }
 
-    #navbar {
+    #navbar,
+    #giftbar {
         /* justify-content: space-around; */
         width: 30%;
     }
@@ -355,8 +375,13 @@ a.hover {
     h1 {
         font-size: 2em;
     }
+    #genwrapper {
+        flex-direction: row;
+        align-content: space-between;
+    }
 
-    #navbar {
+    #navbar,
+    #giftbar {
         width: 20%;
     }
 

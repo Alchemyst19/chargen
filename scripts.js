@@ -5,13 +5,29 @@ function setProp(property, setval) {
     console.log(localStorage.getItem(property));
 }
 
+function getInt(string){
+    var x = parseInt(string, 10);
+    return x;
+}
+
 function setASI() {
-    setProp('STR', (document.getElementById('STR').value)+document.getElementById('strrace').innerHTML);
-    setProp('DEX', (document.getElementById('DEX').value)+document.getElementById('dexrace').value);
-    setProp('CON', (document.getElementById('CON').value)+document.getElementById('conrace').value);
-    setProp('INT', (document.getElementById('INT').value)+document.getElementById('intrace').value);
-    setProp('WIS', (document.getElementById('WIS').value)+document.getElementById('wisrace').value);
-    setProp('CHA', (document.getElementById('CHA').value)+document.getElementById('charace').value);
+    setProp('STR', (parseInt(document.getElementById('STR').value))+parseInt(document.getElementById('strrace').innerHTML));
+    setProp('DEX', (getInt(document.getElementById('DEX').value))+getInt(document.getElementById('dexrace').innerHTML));
+    setProp('CON', (getInt(document.getElementById('CON').value))+getInt(document.getElementById('conrace').innerHTML));
+    setProp('INT', (getInt(document.getElementById('INT').value))+getInt(document.getElementById('intrace').innerHTML));
+    setProp('WIS', (getInt(document.getElementById('WIS').value))+getInt(document.getElementById('wisrace').innerHTML));
+    setProp('CHA', (getInt(document.getElementById('CHA').value))+getInt(document.getElementById('charace').innerHTML));
+}
+
+function showCharacter() {
+    $('#finrace').html('<b>Race:</b> '+comprehendRace(localStorage.getItem('race')));
+    $('#finclass').html('<b>Class:</b> '+localStorage.getItem('class'));
+    $('#finstr').html('<b>Strength:</b> '+localStorage.getItem('STR'));
+    $('#findex').html('<b>Dexterity:</b> '+localStorage.getItem('DEX'));
+    $('#fincon').html('<b>Constitution:</b> '+localStorage.getItem('CON'));
+    $('#finint').html('<b>Intelligence:</b> '+localStorage.getItem('INT'));
+    $('#finwis').html('<b>Wisdom:</b> '+localStorage.getItem('WIS'));
+    $('#fincha').html('<b>Charisma:</b> '+localStorage.getItem('CHA'));
 }
 
 function raceScore() {
@@ -167,16 +183,66 @@ function toggleNav (toggle) {
     if(toggle == 1){
         var x = document.getElementById('navbar');
         x.style.display = "flex";
-        var y = document.getElementById('onbutton');
+        var y = document.getElementById('onbuttonnav');
         y.style.display = "none";
-        var z = document.getElementById('offbutton');
+        var z = document.getElementById('offbuttonnav');
         z.style.display = "flex";
     }else{
         var x = document.getElementById('navbar');
         x.style.display = "none";
-        var y = document.getElementById('onbutton');
+        var y = document.getElementById('onbuttonnav');
         y.style.display = "flex";
-        var z = document.getElementById('offbutton');
+        var z = document.getElementById('offbuttonnav');
         z.style.display = "none";
+    }
+}
+
+function toggleGift (toggle) {
+    if(toggle == 1){
+        var x = document.getElementById('giftbar');
+        x.style.display = "flex";
+        var y = document.getElementById('onbuttongift');
+        y.style.display = "none";
+        var z = document.getElementById('offbuttongift');
+        z.style.display = "flex";
+    }else{
+        var x = document.getElementById('giftbar');
+        x.style.display = "none";
+        var y = document.getElementById('onbuttongift');
+        y.style.display = "flex";
+        var z = document.getElementById('offbuttongift');
+        z.style.display = "none";
+    }
+}
+
+function comprehendRace(race){
+    if(race === 'hilldwarf'){
+        return 'Hill Dwarf';
+    }else if(race==='mountdwarf'){
+        return 'Mountain Dwarf';
+    }else if(race==='highelf'){
+        return 'High Elf';
+    }else if(race==='woodelf'){
+        return 'Wood Elf';
+    }else if(race==='drow'){
+        return 'Drow';
+    }else if(race==='lightfoot'){
+        return 'Lightfoot Halfling';
+    }else if(race==='stout'){
+        return 'Stout Halfling';
+    }else if(race==='human'){
+        return 'Human';
+    }else if(race==='dragonborn'){
+        return "Dragonborn";
+    }else if(race==='forest'){
+        return 'Forest Gnome';
+    }else if(race==='rock'){
+        return 'Rock Gnome';
+    }else if(race==='halfelf'){
+        return 'Half-Elf';
+    }else if(race==='halforc'){
+        return 'Half-Orc';
+    }else{
+        return 'Tiefling';
     }
 }
